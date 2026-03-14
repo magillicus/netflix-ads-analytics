@@ -1,5 +1,7 @@
 # Streaming Platform Ad Performance Analytics
 
+This project explores analytics frameworks that could support performance monitoring for a streaming advertising platform.
+
 ## Overview
 
 This project explores the design of analytics metrics and reporting workflows for an ad-supported streaming platform. The goal is to evaluate advertising performance, viewer engagement, and revenue generation across streaming sessions.
