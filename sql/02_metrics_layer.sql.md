@@ -1,7 +1,31 @@
+-- =========================================================
+
+-- File: 02_metrics_layer.sql
+-- Project: Streaming Platform Ad Performance Analytics
+
+-- Purpose:
+-- Create a derived metrics layer from the raw streaming
+-- session dataset. This script generates calculated fields
+-- such as engagement metrics, ad interaction rates, and
+-- revenue efficiency metrics.
+
+-- The resulting table (ads_metrics_session) acts as a clean,
+-- analysis-ready dataset that simplifies downstream queries
+-- and ensures consistent metric definitions across analyses.
+
+-- Output:
+-- ads_metrics_session table containing both raw session data
+-- and derived advertising performance metrics.
+
+-- =========================================================
+
+-- Data Preview
+
 SELECT *  
 FROM ads_metrics_session  
 LIMIT 10;
 
+-- Headline metrics
 SELECT
     COUNT(*) AS total_sessions,
     COUNT(DISTINCT user_id) AS total_users,
