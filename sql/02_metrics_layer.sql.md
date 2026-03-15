@@ -1,6 +1,7 @@
 -- =========================================================
 
 -- File: 02_metrics_layer.sql
+
 -- Project: Streaming Platform Ad Performance Analytics
 
 -- Purpose:
