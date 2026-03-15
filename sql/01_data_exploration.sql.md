@@ -1,4 +1,5 @@
 -- =========================================================
+
 -- File: 01_data_exploration.sql
 -- Project: Streaming Platform Ad Performance Analytics
 
