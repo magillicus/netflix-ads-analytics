@@ -33,7 +33,7 @@ FROM ads_metrics_session
 GROUP BY device_type
 ORDER BY revenue DESC;
 
--Revenue by Genre
+--Revenue by Genre
 SELECT
 content_genre,
 COUNT(*) AS sessions,
