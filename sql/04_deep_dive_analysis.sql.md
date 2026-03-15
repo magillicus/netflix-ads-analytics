@@ -1,4 +1,27 @@
+-- =========================================================
+
+-- File: 04_deep_dive_analysis.sql
+
+-- Project: Streaming Platform Ad Performance Analytics
+
+-- Purpose:
+-- Perform deeper analytical exploration of the streaming ads
+-- ecosystem to uncover content-level monetization patterns,
+-- engagement trends, and advertising efficiency metrics.
+
+-- This script focuses on identifying high-performing content,
+-- examining the relationship between ad load and viewer
+-- engagement, and evaluating monetization efficiency across
+-- different content categories.
+
+-- Output:
+-- Insight-oriented queries used to generate findings for
+-- dashboards, reports, and executive summaries.
+
+-- =========================================================
+
 --Top Content by Ad Revenue
+
 SELECT
 content_title,
 content_genre,
