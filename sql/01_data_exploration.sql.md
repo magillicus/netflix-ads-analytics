@@ -1,13 +1,13 @@
 -- =========================================================
 -- File: 01_data_exploration.sql
 -- Project: Streaming Platform Ad Performance Analytics
---
+
 -- Purpose:
 -- Perform initial exploration of the raw streaming session dataset.
 -- This script validates dataset structure, checks row counts,
 -- examines distributions across key dimensions (country, device,
 -- content genre), and confirms data quality before analysis begins.
---
+
 -- Output:
 -- Basic dataset diagnostics used to verify that the dataset
 -- has been loaded correctly and is suitable for downstream
