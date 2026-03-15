@@ -1,4 +1,28 @@
+-- =========================================================
+
+-- File: 03_platform_performance_analysis.sql
+
+-- Project: Streaming Platform Ad Performance Analytics
+
+-- Purpose:
+-- Analyze overall advertising platform performance using the
+-- derived metrics layer. This script evaluates key performance
+-- indicators such as revenue, ad impressions, engagement,
+-- and session activity across major platform segments.
+
+-- Segmentation dimensions include:
+-- - Device type
+-- - Content genre
+-- - Geographic region
+
+-- Output:
+-- Aggregated metrics used to understand platform health,
+-- identify revenue drivers, and support dashboard reporting.
+
+-- =========================================================
+
 --Revenue by Device
+
 SELECT
 device_type,
 COUNT(*) AS sessions,
