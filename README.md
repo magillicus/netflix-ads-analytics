@@ -86,7 +86,3 @@ presentation/
 * Tableau
 * GitHub
 
-## Status
-
-This project is currently under development and will include additional analysis, dashboards, and insights as the work progresses.
-
