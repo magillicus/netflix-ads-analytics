@@ -81,7 +81,7 @@ data/
 sql/
     01_data_exploration.sql.md
     02_core_metrics.sql.md
-    03_ad_performance_analysis.sql.md
+    03_platform_performance_analysis.sql.md
     04_deep_dive_analysis.sql.md
 
 excel/
