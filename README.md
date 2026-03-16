@@ -1,6 +1,12 @@
 # Streaming Platform Ad Performance Analytics
 
-This project explores analytics frameworks that could support performance monitoring for a streaming advertising platform.
+## Why This Project
+
+To demonstrate how I approach real analytics problems, I built a targeted analysis of what I believe a streaming platform's advertising ecosystem might mirror.
+
+This project simulates how an analytics engineer might evaluate the health of an ad-supported streaming product by developing core metrics, analyzing monetization patterns, and communicating insights through dashboards and executive summaries.
+
+The goal was not simply to build visualizations, but to replicate a realistic analytics workflow — from raw data exploration and SQL metric development to stakeholder-ready insights and recommendations.
 
 ## Dashboard Preview
 <img width="959" height="539" alt="Tableau Dashboard Screenshot" src="https://github.com/user-attachments/assets/d96214b8-f9f1-4466-9d9a-42a5898c15f1" />
