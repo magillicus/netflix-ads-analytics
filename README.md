@@ -2,11 +2,23 @@
 
 This project explores analytics frameworks that could support performance monitoring for a streaming advertising platform.
 
-## Overview
+## Dashboard Preview
+<img width="959" height="539" alt="Tableau Dashboard Screenshot" src="https://github.com/user-attachments/assets/d96214b8-f9f1-4466-9d9a-42a5898c15f1" />
 
-This project explores the design of analytics metrics and reporting workflows for an ad-supported streaming platform. The goal is to evaluate advertising performance, viewer engagement, and revenue generation across streaming sessions.
+## Project Overview
 
-The analysis simulates how analytics engineers and product analysts might monitor the health of a streaming advertising platform similar to those used by large media companies.
+This project explores advertising performance within a simulated ad-supported streaming platform. The analysis evaluates how advertising revenue, viewer engagement, and content consumption interact across different devices, content genres, and geographic markets.
+
+Using a dataset representing 25,000 streaming sessions, the project develops core platform metrics, analyzes monetization patterns, and visualizes insights through an interactive Tableau dashboard. The goal is to demonstrate how analytics can support product and advertising strategy decisions for a streaming platform.
+
+Key components of the project include:
+
+* SQL-based data exploration and metric development
+* Aggregated analysis of advertising revenue drivers
+* Visualization of platform performance using Tableau
+* Executive-style summary of key findings and strategic insights
+
+This project simulates the type of analytical work that might support product and advertising teams responsible for monitoring the health and performance of a streaming ad platform.
 
 ## Business Scenario
 
@@ -78,6 +90,24 @@ tableau/
 presentation/
     ads_platform_insights.pptx
 ```
+
+## Project Workflow
+
+1. **Data Exploration (SQL)**
+   The raw streaming session dataset was explored and validated to confirm distributions across devices, content genres, and countries.
+
+2. **Metrics Development (SQL)**
+   A metrics layer was created to calculate engagement and monetization indicators such as ad completion rate, revenue per impression, and watch duration.
+
+3. **Aggregation & Supporting Analysis (Excel)**
+   Query outputs were exported into Excel to prepare structured tables used for visualization.
+
+4. **Visualization (Tableau)**
+   An interactive dashboard was built to monitor advertising platform health, revenue distribution, and engagement patterns.
+
+5. **Executive Communication (PowerPoint)**
+   Key findings were summarized into an executive-style presentation highlighting insights and strategic opportunities.
+
 
 ## Tools Used
 
