@@ -1,0 +1,2872 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Ad Performance Headline Metrics (Netflix Ad Performance Metrics)' inline='true' name='federated.1ikkiim1mn7zii1bhep9k0jok96r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Netflix Ad Performance Metrics' name='excel-direct.1gpvv4c1vfp6vz1brubqh13t25nc'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/netflix-ad-performance-analysis/data/Netflix Ad Performance Metrics.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.1gpvv4c1vfp6vz1brubqh13t25nc' name='Ad Performance Headline Metrics' table='[&apos;Ad Performance Headline Metrics$&apos;]' type='table'>
+            <columns gridOrigin='A1:I2:no:A1:I2:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Total Sessions' ordinal='0' />
+              <column datatype='integer' name='Total Users' ordinal='1' />
+              <column datatype='integer' name='Total Ad Impressions' ordinal='2' />
+              <column datatype='real' name='Total Ad Revenue' ordinal='3' />
+              <column datatype='real' name='ARPU' ordinal='4' />
+              <column datatype='real' name='Average Ads Per Session' ordinal='5' />
+              <column datatype='real' name='Average Watch Minutes' ordinal='6' />
+              <column datatype='real' name='Platform Completion Rate' ordinal='7' />
+              <column datatype='real' name='Platform Click Rate' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1gpvv4c1vfp6vz1brubqh13t25nc' name='Revenue by Device' table='[&apos;Revenue by Device$&apos;]' type='table'>
+            <columns gridOrigin='A1:E5:no:A1:E5:0' header='yes' outcome='6'>
+              <column datatype='string' name='Device Type' ordinal='0' />
+              <column datatype='integer' name='Sessions' ordinal='1' />
+              <column datatype='integer' name='Impressions' ordinal='2' />
+              <column datatype='real' name='Revenue' ordinal='3' />
+              <column datatype='real' name='Average Watch Minutes' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1gpvv4c1vfp6vz1brubqh13t25nc' name='Revenue by Genre' table='[&apos;Revenue by Genre$&apos;]' type='table'>
+            <columns gridOrigin='A1:E6:no:A1:E6:0' header='yes' outcome='6'>
+              <column datatype='string' name='Content Genre' ordinal='0' />
+              <column datatype='integer' name='Sessions' ordinal='1' />
+              <column datatype='real' name='Revenue' ordinal='2' />
+              <column datatype='integer' name='Impressions' ordinal='3' />
+              <column datatype='real' name='Average Watch Minutes' ordinal='4' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[ARPU]' value='[Ad Performance Headline Metrics].[ARPU]' />
+          <map key='[Average Ads Per Session]' value='[Ad Performance Headline Metrics].[Average Ads Per Session]' />
+          <map key='[Average Watch Minutes (Revenue by Device)]' value='[Revenue by Device].[Average Watch Minutes]' />
+          <map key='[Average Watch Minutes (Revenue by Genre)]' value='[Revenue by Genre].[Average Watch Minutes]' />
+          <map key='[Average Watch Minutes]' value='[Ad Performance Headline Metrics].[Average Watch Minutes]' />
+          <map key='[Content Genre]' value='[Revenue by Genre].[Content Genre]' />
+          <map key='[Device Type]' value='[Revenue by Device].[Device Type]' />
+          <map key='[Impressions (Revenue by Genre)]' value='[Revenue by Genre].[Impressions]' />
+          <map key='[Impressions]' value='[Revenue by Device].[Impressions]' />
+          <map key='[Platform Click Rate]' value='[Ad Performance Headline Metrics].[Platform Click Rate]' />
+          <map key='[Platform Completion Rate]' value='[Ad Performance Headline Metrics].[Platform Completion Rate]' />
+          <map key='[Revenue (Revenue by Genre)]' value='[Revenue by Genre].[Revenue]' />
+          <map key='[Revenue]' value='[Revenue by Device].[Revenue]' />
+          <map key='[Sessions (Revenue by Genre)]' value='[Revenue by Genre].[Sessions]' />
+          <map key='[Sessions]' value='[Revenue by Device].[Sessions]' />
+          <map key='[Total Ad Impressions]' value='[Ad Performance Headline Metrics].[Total Ad Impressions]' />
+          <map key='[Total Ad Revenue]' value='[Ad Performance Headline Metrics].[Total Ad Revenue]' />
+          <map key='[Total Sessions]' value='[Ad Performance Headline Metrics].[Total Sessions]' />
+          <map key='[Total Users]' value='[Ad Performance Headline Metrics].[Total Users]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I2:no:A1:I2:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E5:no:A1:E5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E6:no:A1:E6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Sessions]</local-name>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias>Total Sessions</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Users]</local-name>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias>Total Users</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Ad Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Ad Impressions]</local-name>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias>Total Ad Impressions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Ad Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Ad Revenue]</local-name>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias>Total Ad Revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ARPU</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ARPU]</local-name>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias>ARPU</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Ads Per Session</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Ads Per Session]</local-name>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias>Average Ads Per Session</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Watch Minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Watch Minutes]</local-name>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias>Average Watch Minutes</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Platform Completion Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Platform Completion Rate]</local-name>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias>Platform Completion Rate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Platform Click Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Platform Click Rate]</local-name>
+            <parent-name>[Ad Performance Headline Metrics]</parent-name>
+            <remote-alias>Platform Click Rate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Device Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Device Type]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Device Type</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_4EF41D2E33BD46599082FEB4B64D2A86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sessions]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Sessions</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_4EF41D2E33BD46599082FEB4B64D2A86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Impressions]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Impressions</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_4EF41D2E33BD46599082FEB4B64D2A86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_4EF41D2E33BD46599082FEB4B64D2A86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Watch Minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Watch Minutes (Revenue by Device)]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Average Watch Minutes</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_4EF41D2E33BD46599082FEB4B64D2A86]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Content Genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Content Genre]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Content Genre</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_34B12F8D57DC4DE0A3BC9D606636594E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sessions (Revenue by Genre)]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Sessions</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_34B12F8D57DC4DE0A3BC9D606636594E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue (Revenue by Genre)]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_34B12F8D57DC4DE0A3BC9D606636594E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Impressions (Revenue by Genre)]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Impressions</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_34B12F8D57DC4DE0A3BC9D606636594E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Watch Minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Watch Minutes (Revenue by Genre)]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Average Watch Minutes</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_34B12F8D57DC4DE0A3BC9D606636594E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Arpu' datatype='real' name='[ARPU]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Content Genre]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Device Type]' role='dimension' type='nominal' />
+      <column datatype='real' default-format='C1033%' name='[Revenue (Revenue by Genre)]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='C1033%' name='[Revenue]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='C1033%' name='[Total Ad Revenue]' role='measure' type='quantitative' />
+      <column caption='Ad Performance Headline Metrics' datatype='table' name='[__tableau_internal_object_id__].[Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1]' role='measure' type='quantitative' />
+      <column caption='Revenue by Device' datatype='table' name='[__tableau_internal_object_id__].[Revenue by Device_4EF41D2E33BD46599082FEB4B64D2A86]' role='measure' type='quantitative' />
+      <column caption='Revenue by Genre' datatype='table' name='[__tableau_internal_object_id__].[Revenue by Genre_34B12F8D57DC4DE0A3BC9D606636594E]' role='measure' type='quantitative' />
+      <column-instance column='[Content Genre]' derivation='None' name='[none:Content Genre:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Device Type]' derivation='None' name='[none:Device Type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Device Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mobile&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Web&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TV&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tablet&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Content Genre:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Action&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Documentary&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Drama&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Comedy&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kids&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Ad Performance Headline Metrics' id='Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1'>
+            <properties context=''>
+              <relation connection='excel-direct.1gpvv4c1vfp6vz1brubqh13t25nc' name='Ad Performance Headline Metrics' table='[&apos;Ad Performance Headline Metrics$&apos;]' type='table'>
+                <columns gridOrigin='A1:I2:no:A1:I2:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Total Sessions' ordinal='0' />
+                  <column datatype='integer' name='Total Users' ordinal='1' />
+                  <column datatype='integer' name='Total Ad Impressions' ordinal='2' />
+                  <column datatype='real' name='Total Ad Revenue' ordinal='3' />
+                  <column datatype='real' name='ARPU' ordinal='4' />
+                  <column datatype='real' name='Average Ads Per Session' ordinal='5' />
+                  <column datatype='real' name='Average Watch Minutes' ordinal='6' />
+                  <column datatype='real' name='Platform Completion Rate' ordinal='7' />
+                  <column datatype='real' name='Platform Click Rate' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Revenue by Device' id='Revenue by Device_4EF41D2E33BD46599082FEB4B64D2A86'>
+            <properties context=''>
+              <relation connection='excel-direct.1gpvv4c1vfp6vz1brubqh13t25nc' name='Revenue by Device' table='[&apos;Revenue by Device$&apos;]' type='table'>
+                <columns gridOrigin='A1:E5:no:A1:E5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Device Type' ordinal='0' />
+                  <column datatype='integer' name='Sessions' ordinal='1' />
+                  <column datatype='integer' name='Impressions' ordinal='2' />
+                  <column datatype='real' name='Revenue' ordinal='3' />
+                  <column datatype='real' name='Average Watch Minutes' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Revenue by Genre' id='Revenue by Genre_34B12F8D57DC4DE0A3BC9D606636594E'>
+            <properties context=''>
+              <relation connection='excel-direct.1gpvv4c1vfp6vz1brubqh13t25nc' name='Revenue by Genre' table='[&apos;Revenue by Genre$&apos;]' type='table'>
+                <columns gridOrigin='A1:E6:no:A1:E6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Content Genre' ordinal='0' />
+                  <column datatype='integer' name='Sessions' ordinal='1' />
+                  <column datatype='real' name='Revenue' ordinal='2' />
+                  <column datatype='integer' name='Impressions' ordinal='3' />
+                  <column datatype='real' name='Average Watch Minutes' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Average Watch Minutes]' />
+              <expression op='[Average Watch Minutes (Revenue by Device)]' />
+            </expression>
+            <first-end-point object-id='Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1' />
+            <second-end-point object-id='Revenue by Device_4EF41D2E33BD46599082FEB4B64D2A86' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Average Watch Minutes]' />
+              <expression op='[Average Watch Minutes (Revenue by Genre)]' />
+            </expression>
+            <first-end-point object-id='Ad Performance Headline Metrics_FC35978C9C6B4BF1846897C72F9F4DE1' />
+            <second-end-point object-id='Revenue by Genre_34B12F8D57DC4DE0A3BC9D606636594E' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='Revenue by Device (Netflix Ad Performance Metrics)' inline='true' name='federated.1guc0ej0jz9z7l1aq7s1t16pc5nd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Netflix Ad Performance Metrics' name='excel-direct.1ue3pz90btb8rw1f2c0hb1n7v9ar'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/netflix-ad-performance-analysis/data/Netflix Ad Performance Metrics.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ue3pz90btb8rw1f2c0hb1n7v9ar' name='Revenue by Device' table='[&apos;Revenue by Device$&apos;]' type='table'>
+          <columns gridOrigin='A1:E5:no:A1:E5:0' header='yes' outcome='6'>
+            <column datatype='string' name='Device Type' ordinal='0' />
+            <column datatype='integer' name='Sessions' ordinal='1' />
+            <column datatype='integer' name='Impressions' ordinal='2' />
+            <column datatype='real' name='Revenue' ordinal='3' />
+            <column datatype='real' name='Average Watch Minutes' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E5:no:A1:E5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Device Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Device Type]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Device Type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_A6A2A437B53D4227A19381E4E78FAA0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sessions]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Sessions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_A6A2A437B53D4227A19381E4E78FAA0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Impressions]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Impressions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_A6A2A437B53D4227A19381E4E78FAA0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_A6A2A437B53D4227A19381E4E78FAA0C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Watch Minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Watch Minutes]</local-name>
+            <parent-name>[Revenue by Device]</parent-name>
+            <remote-alias>Average Watch Minutes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Device_A6A2A437B53D4227A19381E4E78FAA0C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Revenue by Device' datatype='table' name='[__tableau_internal_object_id__].[Revenue by Device_A6A2A437B53D4227A19381E4E78FAA0C]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Revenue by Device' id='Revenue by Device_A6A2A437B53D4227A19381E4E78FAA0C'>
+            <properties context=''>
+              <relation connection='excel-direct.1ue3pz90btb8rw1f2c0hb1n7v9ar' name='Revenue by Device' table='[&apos;Revenue by Device$&apos;]' type='table'>
+                <columns gridOrigin='A1:E5:no:A1:E5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Device Type' ordinal='0' />
+                  <column datatype='integer' name='Sessions' ordinal='1' />
+                  <column datatype='integer' name='Impressions' ordinal='2' />
+                  <column datatype='real' name='Revenue' ordinal='3' />
+                  <column datatype='real' name='Average Watch Minutes' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Revenue by Country (Netflix Ad Performance Metrics)' inline='true' name='federated.0qa0n9t1walo9z1agoons1450cmt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Netflix Ad Performance Metrics' name='excel-direct.19qqgzi09cfd4w15xtpzs1078r26'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/netflix-ad-performance-analysis/data/Netflix Ad Performance Metrics.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.19qqgzi09cfd4w15xtpzs1078r26' name='Revenue by Country' table='[&apos;Revenue by Country$&apos;]' type='table'>
+          <columns gridOrigin='A1:D6:no:A1:D6:0' header='yes' outcome='6'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Sessions' ordinal='1' />
+            <column datatype='real' name='Revenue' ordinal='2' />
+            <column datatype='integer' name='Impressions' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Revenue by Country]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D6:no:A1:D6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Revenue by Country]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Country_17370C0A919A463AA4E4714133402E52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sessions]</local-name>
+            <parent-name>[Revenue by Country]</parent-name>
+            <remote-alias>Sessions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Country_17370C0A919A463AA4E4714133402E52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[Revenue by Country]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Country_17370C0A919A463AA4E4714133402E52]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Impressions]</local-name>
+            <parent-name>[Revenue by Country]</parent-name>
+            <remote-alias>Impressions</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Country_17370C0A919A463AA4E4714133402E52]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='real' default-format='C1033%' name='[Revenue]' role='measure' type='quantitative' />
+      <column caption='Revenue by Country' datatype='table' name='[__tableau_internal_object_id__].[Revenue by Country_17370C0A919A463AA4E4714133402E52]' role='measure' type='quantitative' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;CA&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BR&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;UK&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AU&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Revenue by Country' id='Revenue by Country_17370C0A919A463AA4E4714133402E52'>
+            <properties context=''>
+              <relation connection='excel-direct.19qqgzi09cfd4w15xtpzs1078r26' name='Revenue by Country' table='[&apos;Revenue by Country$&apos;]' type='table'>
+                <columns gridOrigin='A1:D6:no:A1:D6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Sessions' ordinal='1' />
+                  <column datatype='real' name='Revenue' ordinal='2' />
+                  <column datatype='integer' name='Impressions' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Revenue by Genre (Netflix Ad Performance Metrics)' inline='true' name='federated.0q1ec760xfm1va1dvv8hv0pe93ub' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Netflix Ad Performance Metrics' name='excel-direct.15n8u3q1sjab6e1a8cgcp1gls0ei'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/netflix-ad-performance-analysis/data/Netflix Ad Performance Metrics.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.15n8u3q1sjab6e1a8cgcp1gls0ei' name='Revenue by Genre' table='[&apos;Revenue by Genre$&apos;]' type='table'>
+          <columns gridOrigin='A1:E6:no:A1:E6:0' header='yes' outcome='6'>
+            <column datatype='string' name='Content Genre' ordinal='0' />
+            <column datatype='integer' name='Sessions' ordinal='1' />
+            <column datatype='real' name='Revenue' ordinal='2' />
+            <column datatype='integer' name='Impressions' ordinal='3' />
+            <column datatype='real' name='Average Watch Minutes' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E6:no:A1:E6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Content Genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Content Genre]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Content Genre</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_BFCEEB1C65BA4C35BA38836CB18BE44E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sessions]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Sessions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_BFCEEB1C65BA4C35BA38836CB18BE44E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_BFCEEB1C65BA4C35BA38836CB18BE44E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Impressions]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Impressions</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_BFCEEB1C65BA4C35BA38836CB18BE44E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Watch Minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Watch Minutes]</local-name>
+            <parent-name>[Revenue by Genre]</parent-name>
+            <remote-alias>Average Watch Minutes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Revenue by Genre_BFCEEB1C65BA4C35BA38836CB18BE44E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Revenue by Genre' datatype='table' name='[__tableau_internal_object_id__].[Revenue by Genre_BFCEEB1C65BA4C35BA38836CB18BE44E]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Revenue by Genre' id='Revenue by Genre_BFCEEB1C65BA4C35BA38836CB18BE44E'>
+            <properties context=''>
+              <relation connection='excel-direct.15n8u3q1sjab6e1a8cgcp1gls0ei' name='Revenue by Genre' table='[&apos;Revenue by Genre$&apos;]' type='table'>
+                <columns gridOrigin='A1:E6:no:A1:E6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Content Genre' ordinal='0' />
+                  <column datatype='integer' name='Sessions' ordinal='1' />
+                  <column datatype='real' name='Revenue' ordinal='2' />
+                  <column datatype='integer' name='Impressions' ordinal='3' />
+                  <column datatype='real' name='Average Watch Minutes' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Engagement vs Ads (Netflix Ad Performance Metrics)' inline='true' name='federated.0s5apid0m90q8s18rcmfb035uspq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Netflix Ad Performance Metrics' name='excel-direct.0voz2e50jz76hv0zmz2dl0arsv5f'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/netflix-ad-performance-analysis/data/Netflix Ad Performance Metrics.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0voz2e50jz76hv0zmz2dl0arsv5f' name='Engagement vs Ads' table='[&apos;Engagement vs Ads$&apos;]' type='table'>
+          <columns gridOrigin='A1:C10:no:A1:C10:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Ad Impressions' ordinal='0' />
+            <column datatype='real' name='Average Watch Minutes' ordinal='1' />
+            <column datatype='integer' name='Sessions' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Engagement vs Ads]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C10:no:A1:C10:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ad Impressions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ad Impressions]</local-name>
+            <parent-name>[Engagement vs Ads]</parent-name>
+            <remote-alias>Ad Impressions</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Engagement vs Ads_0A803704385A4C07A7366119C21C4C7C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Watch Minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Watch Minutes]</local-name>
+            <parent-name>[Engagement vs Ads]</parent-name>
+            <remote-alias>Average Watch Minutes</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Engagement vs Ads_0A803704385A4C07A7366119C21C4C7C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sessions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sessions]</local-name>
+            <parent-name>[Engagement vs Ads]</parent-name>
+            <remote-alias>Sessions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Engagement vs Ads_0A803704385A4C07A7366119C21C4C7C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Ad Impressions]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[Average Watch Minutes]' role='measure' type='quantitative' />
+      <column caption='Engagement vs Ads' datatype='table' name='[__tableau_internal_object_id__].[Engagement vs Ads_0A803704385A4C07A7366119C21C4C7C]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Engagement vs Ads' id='Engagement vs Ads_0A803704385A4C07A7366119C21C4C7C'>
+            <properties context=''>
+              <relation connection='excel-direct.0voz2e50jz76hv0zmz2dl0arsv5f' name='Engagement vs Ads' table='[&apos;Engagement vs Ads$&apos;]' type='table'>
+                <columns gridOrigin='A1:C10:no:A1:C10:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Ad Impressions' ordinal='0' />
+                  <column datatype='real' name='Average Watch Minutes' ordinal='1' />
+                  <column datatype='integer' name='Sessions' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Ads Per Session'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ad Performance Headline Metrics (Netflix Ad Performance Metrics)' name='federated.1ikkiim1mn7zii1bhep9k0jok96r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikkiim1mn7zii1bhep9k0jok96r'>
+            <column datatype='real' name='[Average Ads Per Session]' role='measure' type='quantitative' />
+            <column-instance column='[Average Ads Per Session]' derivation='Sum' name='[sum:Average Ads Per Session:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Average Ads Per Session:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Average Ads Per Session:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='30'>&lt;</run>
+                <run bold='true' fontsize='30'>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Average Ads Per Session:qk]</run>
+                <run bold='true' fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7E2497BC-86EE-46E9-B3B9-7F0B1FC1B87B}' />
+    </worksheet>
+    <worksheet name='Average Watch Minutes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ad Performance Headline Metrics (Netflix Ad Performance Metrics)' name='federated.1ikkiim1mn7zii1bhep9k0jok96r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikkiim1mn7zii1bhep9k0jok96r'>
+            <column datatype='real' name='[Average Watch Minutes]' role='measure' type='quantitative' />
+            <column-instance column='[Average Watch Minutes]' derivation='Sum' name='[sum:Average Watch Minutes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Average Watch Minutes:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Average Watch Minutes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='30'>&lt;</run>
+                <run bold='true' fontsize='30'>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Average Watch Minutes:qk]</run>
+                <run bold='true' fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E9A08663-56E7-4F3C-9533-D7251265B142}' />
+    </worksheet>
+    <worksheet name='Engagement vs Ad Load'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Session Length vs Ad Impressions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Engagement vs Ads (Netflix Ad Performance Metrics)' name='federated.0s5apid0m90q8s18rcmfb035uspq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s5apid0m90q8s18rcmfb035uspq'>
+            <column aggregation='Sum' datatype='integer' name='[Ad Impressions]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' datatype='real' name='[Average Watch Minutes]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Sessions]' role='measure' type='quantitative' />
+            <column-instance column='[Average Watch Minutes]' derivation='Avg' name='[avg:Average Watch Minutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ad Impressions]' derivation='None' name='[none:Ad Impressions:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sessions]' derivation='Sum' name='[sum:Sessions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='36' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='font-weight' scope='rows' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0s5apid0m90q8s18rcmfb035uspq].[avg:Average Watch Minutes:qk]' value='bold' />
+            <format attr='font-weight' field='[federated.0s5apid0m90q8s18rcmfb035uspq].[none:Ad Impressions:ok]' value='bold' />
+            <format attr='color' field='[federated.0s5apid0m90q8s18rcmfb035uspq].[none:Ad Impressions:ok]' value='#000000' />
+            <format attr='color' field='[federated.0s5apid0m90q8s18rcmfb035uspq].[avg:Average Watch Minutes:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0s5apid0m90q8s18rcmfb035uspq].[avg:Average Watch Minutes:qk]' value='8' />
+            <format attr='font-size' field='[federated.0s5apid0m90q8s18rcmfb035uspq].[none:Ad Impressions:ok]' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <tooltip column='[federated.0s5apid0m90q8s18rcmfb035uspq].[sum:Sessions:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000'>Ad Impressions:</run>
+                <run fontalignment='1' fontcolor='#000000'>Æ&#9;&#9;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[<[federated.0s5apid0m90q8s18rcmfb035uspq].[none:Ad Impressions:ok]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'>Average Watch Minutes:</run>
+                <run fontalignment='1' fontcolor='#000000'>Æ&#9;&#9;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[<[federated.0s5apid0m90q8s18rcmfb035uspq].[avg:Average Watch Minutes:qk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'>Sessions:</run>
+                <run fontalignment='1' fontcolor='#000000'>Æ&#9;&#9;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'><![CDATA[<[federated.0s5apid0m90q8s18rcmfb035uspq].[sum:Sessions:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s5apid0m90q8s18rcmfb035uspq].[avg:Average Watch Minutes:qk]</rows>
+        <cols>[federated.0s5apid0m90q8s18rcmfb035uspq].[none:Ad Impressions:ok]</cols>
+      </table>
+      <simple-id uuid='{74003054-E9C1-4188-BA9D-0374BA9C391F}' />
+    </worksheet>
+    <worksheet name='Revenue by Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Revenue by Country (Netflix Ad Performance Metrics)' name='federated.0qa0n9t1walo9z1agoons1450cmt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qa0n9t1walo9z1agoons1450cmt'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' default-format='C1033%' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' field-type='quantitative' major-origin='0.0' major-spacing='500.0' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' scope='cols' value='' />
+            <format attr='stroke-size' scope='rows' value='5' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]' value='normal' />
+            <format attr='font-weight' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' value='normal' />
+            <format attr='font-size' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' value='8' />
+            <format attr='color' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]' value='bold' />
+            <format attr='color' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' value='bold' />
+            <format attr='color' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]' value='8' />
+            <format attr='font-size' field='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' value='8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]' />
+              <text column='[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000'>Country:</run>
+                <run fontalignment='1' fontcolor='#000000'><![CDATA[	 <[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'>Revenue:</run>
+                <run fontalignment='1' fontcolor='#000000'><![CDATA[	 <[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]</rows>
+        <cols>[federated.0qa0n9t1walo9z1agoons1450cmt].[sum:Revenue:qk]</cols>
+      </table>
+      <simple-id uuid='{3D65BBE8-8A35-442E-AFC8-3A908361594B}' />
+    </worksheet>
+    <worksheet name='Revenue by Device'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ad Performance Headline Metrics (Netflix Ad Performance Metrics)' name='federated.1ikkiim1mn7zii1bhep9k0jok96r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikkiim1mn7zii1bhep9k0jok96r'>
+            <column datatype='string' name='[Device Type]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='C1033%' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Device Type]' derivation='None' name='[none:Device Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' field-type='quantitative' major-origin='0.0' major-spacing='500.0' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' scope='cols' value='' />
+            <format attr='stroke-color' value='#000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='5' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+            <format attr='color' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' value='normal' />
+            <format attr='font-size' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' value='8' />
+            <format attr='color' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]' value='8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]' value='center' />
+            <format attr='font-weight' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]' value='bold' />
+            <format attr='color' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]' value='#000000' />
+            <format attr='color' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' value='bold' />
+            <format attr='font-size' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]' value='8' />
+            <format attr='font-size' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' value='8' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-weight' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' value='normal' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]' />
+              <text column='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000'>Device Type:&#9;</run>
+                <run fontalignment='1' fontcolor='#757575'>Æ </run>
+                <run fontalignment='1' fontcolor='#000000'><![CDATA[<[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'>Revenue:</run>
+                <run fontalignment='1' fontcolor='#757575'>Æ &#9;</run>
+                <run fontalignment='1' fontcolor='#000000'><![CDATA[<[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]</rows>
+        <cols>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue:qk]</cols>
+      </table>
+      <simple-id uuid='{A2A6E74F-D6C7-454A-8812-E60E0329F8EC}' />
+    </worksheet>
+    <worksheet name='Revenue by Genre'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ad Performance Headline Metrics (Netflix Ad Performance Metrics)' name='federated.1ikkiim1mn7zii1bhep9k0jok96r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikkiim1mn7zii1bhep9k0jok96r'>
+            <column datatype='string' name='[Content Genre]' role='dimension' type='nominal' />
+            <column datatype='real' default-format='C1033%' name='[Revenue (Revenue by Genre)]' role='measure' type='quantitative' />
+            <column-instance column='[Content Genre]' derivation='None' name='[none:Content Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Revenue (Revenue by Genre)]' derivation='Sum' name='[sum:Revenue (Revenue by Genre):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Content Genre:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' field-type='quantitative' major-origin='0.0' major-spacing='500.0' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' scope='cols' value='' />
+            <format attr='stroke-size' scope='rows' value='5' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='10' />
+            <format attr='color' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='normal' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='normal' />
+            <format attr='font-weight' data-class='total' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Content Genre:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Content Genre:nk]' value='bold' />
+            <format attr='color' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='bold' />
+            <format attr='font-size' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Content Genre:nk]' value='8' />
+            <format attr='font-size' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='10' />
+            <format attr='font-weight' field='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' value='normal' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Content Genre:nk]' />
+              <text column='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000'>Content Genre: &#9;</run>
+                <run fontalignment='1' fontcolor='#000000'><![CDATA[<[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Content Genre:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#000000'>Revenue: &#9;</run>
+                <run fontalignment='1' fontcolor='#000000'><![CDATA[<[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Content Genre:nk]</rows>
+        <cols>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Revenue (Revenue by Genre):qk]</cols>
+      </table>
+      <simple-id uuid='{6B27F3D2-23D9-44CE-9F94-A19156EF784F}' />
+    </worksheet>
+    <worksheet name='Total Ad Impressions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ad Performance Headline Metrics (Netflix Ad Performance Metrics)' name='federated.1ikkiim1mn7zii1bhep9k0jok96r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikkiim1mn7zii1bhep9k0jok96r'>
+            <column datatype='integer' name='[Total Ad Impressions]' role='measure' type='quantitative' />
+            <column-instance column='[Total Ad Impressions]' derivation='Sum' name='[sum:Total Ad Impressions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Total Ad Impressions:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='30'>&lt;</run>
+                <run bold='true' fontsize='30'>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Total Ad Impressions:qk]</run>
+                <run bold='true' fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B01FF3BA-D274-4B29-8C0E-68172E58A538}' />
+    </worksheet>
+    <worksheet name='Total Ad Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ad Performance Headline Metrics (Netflix Ad Performance Metrics)' name='federated.1ikkiim1mn7zii1bhep9k0jok96r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikkiim1mn7zii1bhep9k0jok96r'>
+            <column datatype='real' default-format='C1033%' name='[Total Ad Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Total Ad Revenue]' derivation='Sum' name='[sum:Total Ad Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Total Ad Revenue:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='30'>&lt;</run>
+                <run bold='true' fontsize='30'>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[sum:Total Ad Revenue:qk]</run>
+                <run bold='true' fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3EF921CD-AA17-429F-A567-5FB2321A4018}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Streaming Platform Ads Performance Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='89537' id='17' param='horz' type-v2='layout-flow' w='99002' x='499' y='9512'>
+            <zone h='89537' id='14' param='horz' type-v2='layout-flow' w='99002' x='499' y='9512'>
+              <zone h='89537' id='11' param='horz' type-v2='layout-flow' w='99002' x='499' y='9512'>
+                <zone h='89537' id='9' type-v2='layout-basic' w='99002' x='499' y='9512'>
+                  <zone h='16008' id='3' name='Total Ad Revenue' w='21434' x='499' y='9512'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='16008' id='5' name='Total Ad Impressions' w='26933' x='21933' y='9512'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='16008' id='6' name='Average Ads Per Session' w='26123' x='48866' y='9512'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='16008' id='7' name='Average Watch Minutes' w='24512' x='74989' y='9512'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='34712' id='8' name='Revenue by Device' w='48370' x='499' y='25520'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='34712' id='12' name='Revenue by Genre' w='50632' x='48869' y='25520'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='38817' id='15' name='Revenue by Country' w='48370' x='499' y='60232'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='38817' id='19' name='Engagement vs Ad Load' w='50632' x='48869' y='60232'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='4637' id='20' type-v2='text' w='99002' x='499' y='4875'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='18'>Streaming Platform Ads Performance Dashboard</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='3924' id='23' is-scaled='1' param='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/netflix-ad-performance-analysis/Images/Netflix Logo Against White Backdrop.png' type-v2='bitmap' w='99002' x='499' y='951'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98098' id='28' param='vert' type-v2='layout-flow' w='99002' x='499' y='951'>
+                <zone fixed-size='23' h='3924' id='23' is-fixed='true' is-scaled='1' param='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/netflix-ad-performance-analysis/Images/Netflix Logo Against White Backdrop.png' type-v2='bitmap' w='99002' x='499' y='951'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4637' id='20' type-v2='text' w='99002' x='499' y='4875'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='18'>Streaming Platform Ads Performance Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='120' h='16008' id='3' is-fixed='true' name='Total Ad Revenue' w='21434' x='499' y='9512'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='120' h='16008' id='5' is-fixed='true' name='Total Ad Impressions' w='26933' x='21933' y='9512'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='120' h='16008' id='6' is-fixed='true' name='Average Ads Per Session' w='26123' x='48866' y='9512'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='120' h='16008' id='7' is-fixed='true' name='Average Watch Minutes' w='24512' x='74989' y='9512'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='34712' id='8' is-fixed='true' name='Revenue by Device' w='48370' x='499' y='25520'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='34712' id='12' is-fixed='true' name='Revenue by Genre' w='50632' x='48869' y='25520'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38817' id='15' is-fixed='true' name='Revenue by Country' w='48370' x='499' y='60232'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38817' id='19' is-fixed='true' name='Engagement vs Ad Load' w='50632' x='48869' y='60232'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2633A867-D118-4310-8FC7-4DE96D449AA4}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='168'>
+    <window class='worksheet' name='Total Ad Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9DFB5326-9D43-4D06-B5EF-C659247A28F8}' />
+    </window>
+    <window class='worksheet' name='Total Ad Impressions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B17C0994-6398-459D-BF91-DF87A7BA7B4E}' />
+    </window>
+    <window class='worksheet' name='Average Ads Per Session'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{203E8FA8-4FAF-4162-A47A-DC9564CF6B9B}' />
+    </window>
+    <window class='worksheet' name='Average Watch Minutes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D6EBA66E-7D19-426A-B27A-B26F0065E243}' />
+    </window>
+    <window class='worksheet' name='Revenue by Device'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Device Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{40D056EE-3978-47CC-9377-952624E6A0A0}' />
+    </window>
+    <window class='worksheet' name='Revenue by Genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Content Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ikkiim1mn7zii1bhep9k0jok96r].[none:Content Genre:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D6897B09-E269-400D-A9C9-F499F5A50A49}' />
+    </window>
+    <window class='worksheet' name='Revenue by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='106'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='20'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='106'>
+            <card pane-specification-id='0' param='[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qa0n9t1walo9z1agoons1450cmt].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9E2ED07D-00D4-4A1A-BD52-D2525F0B5522}' />
+    </window>
+    <window class='worksheet' name='Engagement vs Ad Load'>
+      <cards>
+        <edge name='left'>
+          <strip size='106'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='20'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s5apid0m90q8s18rcmfb035uspq].[none:Ad Impressions:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CFF6F9F2-A31A-463E-88F4-7CD8FFC4928B}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Streaming Platform Ads Performance Dashboard'>
+      <viewpoints>
+        <viewpoint name='Average Ads Per Session'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Watch Minutes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Engagement vs Ad Load'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Device'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Genre'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Ad Impressions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Ad Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{181FACAD-5365-4C7D-9213-C3B48664D505}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Average Ads Per Session' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAADVUlEQVR4nO3ZMWoVaxiA4S9ySwMWKV2ACJLCWk4tBMQVJPaxt5AswNotJCC4BrcQSC0W
+      akqLIEQJHudWBuRqeQmc93mqYeYvppj3n2+YrWVZloGoWzd9A3CTBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEj756ZvAP5vHz58mLdv387MzIMHD+bx48fX1wTARluv1/Pq1as5Ozubq6ur+f79+28B
+      GIHYaO/evZvT09M5PDycW7f++7gLgI11cXExr1+/ntVqNY8ePfrjGgGwkZZlmePj4/ny5cs8
+      f/78j7v/jADYUO/fv5+Tk5M5ODiYu3fv/nWdANg4l5eX8/Lly9nd3Z39/f3Z2tr661oBsFGW
+      ZZk3b97Mx48fr0ef9Xo9P3/+vL6+Xq9nWZaZmdlafh3BBvj69es8efJkvn379tvo8+PHj/n0
+      6dNsb2/Pzs7OvHjxYh4+fOg/AJtntVpd7/i/XF5ezufPn+fOnTtz//79uX379sx4AxBxfn4+
+      T58+nb29vTk6Oro+7xuANCMQCdvb2/Ps2bO5d+/eb+eNQKQZgUgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ9i/2hn7IKI/y
+      8QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Average Watch Minutes' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAFDklEQVR4nO3azyulbRzH8c8955zmiEgjFKXYSE2NmpmsLGQjalJkQSOWsqBmY2RqZjYm
+      pfwD1jMLlOLIYmQjsrHxI6YUoWwcJD/PfT+rx9OT5Sx0+rxfy3Ofb12b97mu63QHURRFAky9
+      eO4FAM+JAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGAt/twLAP7W7e2tFhcXtba2pouLCxUXF6uhoUF1dXV68eK/3/goirS7u6uFhQUdHBwo
+      DEMFURRFz7h24K9cXl5qcHBQGxsbKikpUX5+vk5PT3V+fq62tjZ9+vRJ8XhcDw8P+v79u1Kp
+      lGKxmEpLSxVFETsAstvU1JQ2NjbU29urnp4eJZNJpdNpffv2TdPT02poaND79+91fX2tpaUl
+      ffjwQV1dXSovL1cYhtwBkN12dnaUm5urzs5O5eTkKAgCFRYW6uPHjwrDUHt7e5KkRCKhiYkJ
+      DQ8Pq6KiQrFYTIlEggCQ3aqqqnRzc6PDw8P/fb63t6cgCFRZWSlJSiaTqq2tfTLPHQBZ7erq
+      SkNDQzo4OFB7e7tKS0u1vb2tubk5NTY2amBgQLFY7Mnc/f29tra2CADZLYoi/f79W2NjY7q5
+      uVFRUZGOjo5UWVmp4eFh1dTUPJk5Pj7W6OioVlZWOAIhu83Nzenz589qampSKpXSr1+/NDs7
+      q1evXqmvr0/b29uP342iSGtra+ru7tb6+rq6u7vZAZC9wjBUR0eH7u/v9fPnTyWTycdnR0dH
+      am1tVXNzs758+aIgCLS5uan+/n7l5OTo69evevv2LX+DInuFYajLy0sVFBQ8Oecnk0kFQaDz
+      83NJUiaT0Y8fP5TJZDQ+Pq7q6mpJvAqBLBaPx/X69Wvt7+9rfn5e/x5m7u7uNDk5qUwmozdv
+      3igIAv3580c7Ozuqq6tTSUmJ0um00uk0RyBkt8PDQ/X39+vk5ERVVVUqKyvT7u6ujo+P9e7d
+      O42NjSkvL0+pVEojIyOKx+NKJBKP8wSArHd2dqaZmRmtrq7q6upKRUVFqq+vV0tLi16+fClJ
+      2tzc1PLy8pNZAoA17gCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      9g+IDi638FXqWQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Engagement vs Ad Load' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAR90lEQVR4nO3deXBVZZrH8e+5udlzsxBCEnZMArJ1WARcWhREaGgRFGQRwaU30ZnWXhyn
+      rFmruqpramZ6tLtttZWetluQxQWVETWyKCpLWvYtrCYBAtnuTXK33Nxz3vmDpbXJCYTcNef5
+      VFkUqevJQ9X53Xc57/seTSmlEMKibNEuQIhokgAIS5MACEuTAAhLkwAIS5MACEuTAAhLkwAI
+      S5MACEuTAAhLkwAISwtbAAzDCNelhQiZsAVA1tiJeCBdIGFpEgBhaRIAYWkSAGFpEgBhaRIA
+      YWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFp1xSANp+XgHF+tafP46a1TSfgd1NT24As
+      AhXxpNMBcNUc48c/fIxTHoXR5uaXTz/K+zuO8cJz/8PaPz3PX042hqNOIcLC3tn/IbuwmNnT
+      bkUBH7+7lttnzKTR8KLSerFkZinLdx5lzIAb0HVd9gSImNfpAHia6jlRVY1x+DDKZmfPtq34
+      +iaT5qll45ZyBo+dR0JCAsClP4WIVVpnj0f3NNVx5MQp7ElpDB06BN3XhE8lo7wNVNZ5KB1W
+      gqZp6LouARAxr9MBuFoSABEPZBpUWJoEQFiaBEBYmgRAWJoEQFiaBEBYmgRAWJoEQFiaBEBY
+      mgRAWJoEQFiaBEBYmgRAWJoEQFiaBEBYmgRAWJoEQFhap/cEe11nefY/fs3if/oF58o/Ytve
+      w5SMnYz35DYOVzl58O9+Qu/MpHDUKkTIdToA9qR0hpYMIGDAmIl3guHjiKueOqfOo3NuZO2n
+      +3lwxih5TaqIC50PQEoaSQkawbY2Pl23hvrkQcyddgO/fm4Pzc0tpGUUoGnapf+EiGWdDkDj
+      meOc9gZp2rSBrMRkWuu/Yuf+XG4bN4wNh5wsWFhy6ea32WSIIWKbnAohLE2+ooWlSQCEpUkA
+      hKVJAISlSQCEpUkAhKVJAISlSQCEpUkAhKVJAISlSQCEpUkAhKVJAISlSQCEpUkAhKVJAISl
+      SQCEpV0xAIZh8PU9Y8oIsm3DRzhbFfXVR/j975dxptHNgfJPWPbnN2jVw7LBTIiwMA1A7bFy
+      3nr7LR5a8jA7jtRc+nlzbTVlH22iMaBY9eY65t0zmTffeo8Pt+zitqIE1m09HpHChQgF003x
+      Sm/j5d++wJxF86ltbAEKAcgqGMT4kcUABLVEMh1ZGIEWbInJ5PXKw3XIha7r6LpOmLYbCxEy
+      ppvig61uXn/1fyksKaVo2CgG5WcCUFd1iOeff4X8b02k2OGnouocQ8ffydk9ZZxt9DLnB08y
+      sEeKbIoXccE0AEc+X8vazw/ibdO4/qa7WDB5ZLsXMAwDm82GUgql1KWjUCQAIh6YjgEGlN6C
+      3uKkqbmV28eWmF/gwg0v5wCJeGR6x256dznBnCGMLIDP956IZE1CRIxpALwBgwTVSvZ145k6
+      zrwFECKemQZg8tS7aDp9nM0fv8+x085I1iRExJgGIC2nkIWLFzPh+nwqz7kiWZMQEWMagDZf
+      M5s/LqPak8bo4sJI1iRExJgGoKFyP5t3HsbrbsLta41kTUJEjHkXKLMHWsCH2+1G1+VlF6J7
+      avdBWNDTwN7jZ/A4GzGAYaPGkZeV1qkLy4MwEQ/aXwukdBrrajlx5Ag60HdwaacDIEQ8aDcA
+      9owEnl7yELmjxjC4aCC3fCcQ6bqEiAiTMUAP1pd/zo8WfpfTJ47i8QcjW5UQEWKyHLqZJ5Y8
+      glHQn2n33k9x7+zIViVEhJgEIIXvPfkkvgvj4zaZBRLdlPlL8pTC5/OiG4qU1DTsCZ1b6Smz
+      QCIemN7Vpw9uYfEjj/LMM8+w/6v6SNYkRMS0GwBv/Ve89ub7pGTkcN1115GemhjpuoSIiHa7
+      QHrAx7EjB6n1JJCV4CWz3wgGXtgS+XVKb6Oy+gz9+vcn6G+h1uWnb2EemqZJF0jEhXYHwQlJ
+      qdhaqtl2CIYnVuL15bQbgGXPP0tBv358uO0w7hNbcaQkMHLmUm4q6Rn2woUIBdNTIQaOmkSv
+      PX/iWCCTxWOK2v1M754Ovtx3mBETp+KrK2TRzFKW7zzO+Oty5FQIERdMA7DihV+w7XQGhQkH
+      KftyAvMmDrvsMydrmpg6ZSI7Dp7C8JxjXdkXDJu4+FLXR7pAItaZToN+8dEaTriSGVI8gJEj
+      R5CSePnN7Hc3cbzqDAOLijG8LmqcPkoG9ZMxgIgbpi1Av4KevLriZfb2vg4X2dw5ZsBln0nJ
+      yGL4sKzzf0nOw5ETtjqFCAvT5wCOnn2Ys/AB3PW1ZKTIN7nonky6QC3857/8iuyBRYy/cRyD
+      i4tITTJtLNolXSARD0xagAymz5xEfdU+Fs+dzdZDZyJblRARYtICNPPQXQvIH3ML48aOZsqU
+      O8hOT+7UhaUFEPHApAVI4d6F82ht+IpXfvcs+7+qi2xVQkSISQvQyqcbtzPyhrFkZaShaRqa
+      1rkLSwsg4kEHy6F19pRvJTEzn8J+/cmRLpDohkyndo6Xf8jyVR+SXTiAojFTmT95RCTrEuIb
+      lFIovx/VFkS7uDdF08BmA01Du9hFufila7P99WcdMA1A/qBhGL417N53lPmLv9/lf4AQXeH7
+      y5c0rV6DlpoCF3coXngnBUqBuvAzQwEKdeFPLcEOFwKjJSV980+73TwA2Gz06lNElqH4+KMy
+      Biy6F7utkwMBIbpIGQYtH3yAr/xL8p75RxKysv7mAyYLLi/8XOk66DrKMCB4/nAHFTh/yokK
+      Bs0D0Fh1mGCPErLO7aKivIxdt09nXD85G0hEjgoGca14nWBDA3k//ym29PROX0Ozd/wA13Qp
+      RMHgsRhV26k2cphzz2z65nRuECxEVxheH/W//g1oGj1//PfXdPNfDdN4eBpr2H+oAj35DLb7
+      l1CYITM6IjKC9Q00/OY3pE6YgOM709DC+Oot0yu7aqsZf8ut5OflUVMr7wcQkRGorKTuv/4b
+      x90zcUz/TlhvfujgOYDrzBF2HG+hb3YSAwYPJT1ZFsOJ8FFK4d+9B9fyFfT40Q9JLimOyO81
+      j5cyeO6X/87mzz7jXKM7IsUIa1KGgWfjJprefJO8p5+K2M0PHQQgOT2TokIHrUFweswOx1Wc
+      qa7E1xok4HNz5lyD6ayUEO1Ruk7T6jV4y8vJe/ofsOflRfT3m/Zrqg/soN/1I6g5e4bj1bWM
+      Le512WfWr1yGK7mA0aMT+WDlKyTbNcbe8zjji3qEtWjRPRg+H84//BEtJZm8n/0ULTHy50+Z
+      BmDQmEn02HmUYM8+TLtxSLuf2Vtxgpw8H3uSkiA9nyUzS1m+8yhjB94gp0KIDukuF66XXiZp
+      yGAcs+5G17RLD6oiyXwa1HmWg8dOkdmrN+camsnqm3vZZ/r3KWTAyDHs2XcK3VNL2Sc7GDJ+
+      vpwKIUwppWirrsb50u9xzJhO2s03X9WanXAxDYA9KRVHeipnT52kydv+S/LmLfke+/ZXsOj+
+      2RieBqrqvYy8/vKukhAXtR44iGvF62Qvup+U4ZcftRNpptOgAV8LNbVOTp04SO+hNzKooHPv
+      CJBpUPF1yjDwfLoFd1kZuY8tJbFPn2iXBJi1AIFG/vnpf8Owt1HZ5ODF526PbFWiW1FK0fzW
+      27QeO0beUz8nITt2XrjSfgA0O46MFBpafAR8Lfhag5AR4cpEt2D4/Thf/RMYBj2f+DG21NRo
+      l/QN5jvCAKUHOXp4P46CYgpzO5cA6QIJvaWFht+9SNKggWTNuRctBu+HDgPQFRIAa2urqaHh
+      +RfImHIH6bdNjOpMT0c6t8BHiKvgP1yB84+vkr1wAaml34p2OR2SAIiQUUrh3bad5nffI3fp
+      j0gacPl5srFGAiBCQilFy7p1+HbtIe/nP8Wee/mD01gkYwDRZaqtDedryzFa3PT4/iPY0uJn
+      62x4dxuIbs/weql/9jk0u53cpY/G1c0P0gUSXXB+6+JvSbvlZjKm3BH23VvhIAEQ1yRw8iQN
+      v3uRrAXzSRs7JtrlXDMJgOgUpRS+L3fStHoNuY8vJWngwGiX1CUSAHHVlFK4yz7G8+kW8p76
+      WcR3b4WDzAKJq6KCQVwrVxGsOUvu40vjbrBrRgIgrsjw+Whc9gds6enkPLAoKlsXw0W6QKJD
+      wUbn+UOqxozG8d3vxuVMT0ckAMJUoLqaxhdeIvPumaROGB+zC9q6omsBUAbLfvWvlEz9AfW7
+      11NR7WTJ4z+hT5acIxrPlFK07t+P88+v0eN7j5A8pP1DEbqDLgXg0PYyErPyqXW5OO0yeHTO
+      TazdcoAHZ4zCMIxQ1SgiSSl8Wz6jZcMGejz5BPb8fHRdj3ZVYdOFABh8tn03zoYa/EYhaQEf
+      TU3NpDsKLrxTTMPWzfqL3Z0KBmle+w6Bo0fp9dRT2DId0S4p7Lo8C+Q8VUGNnouvaif7Kp3M
+      mz+PtERNZoHijOH34/zjqwD0eOThS29R6e5kGlSgu1w0vPQyycVFZM6eFZNbF8NFZoHCQAUC
+      +A8cwPB4ol3KFamgjnvjJjImTyLj9tuiXU7ESQsQQsow8O/ZS9OaN7D37o09P/YPCdM0jZTS
+      UpKKi7rlNOeVSABCJPBVJa6Vq9ASE8maN5ekfv2iXZK4CtIF6qJgfT3N775HW1U1mffOJmX4
+      cEv1oeOdtADXyPB6cW/YiHfbNtJvu42MSbd3qzUyViEB6CQVDOLbuYumt94mZcRwMmfdTYKj
+      +8+Xd1cSgKuklCJw7DiulatIyMoke+GCbrEe3upkDHAFSimC587RtOYN9IYGsu9fSFJxcbdb
+      FWlVEoAO6G43Le+vx793L44ZM0ibMF4GuN2MdIHaoQIBPFu34f7wQ1LHj8cxbWrMnWosQkMC
+      8DVKKfz79tO0ejWJffuSdd992HPlhX/dmQSAC/38mhpcy1egDEX2gnkk9u9vySejVmP5MUCw
+      sZHmd98jcPwEWffMJmX0KLnxLcSyLYDh9+PeuAnvZ5+TPvHbpE+ahC1ZdrJZjeUCoHQd3+7d
+      NL+9luTBg8mcPYuEzMxolyWixDIBUErRVlWF67XlaCkpZN+/kMTCwmiXJaLMEmOAYF09rlWr
+      CdbWkr1gHinDov9+WhEbuhSAqordrN+8gzvumoP/9D62H67jgUVzSU6IjUGk4fPR/H/v49+1
+      C8f06ecfZMmCNfE1XeoC1Zw+TVKwkeUbKwg6TzHrpgHsCo5g7q0lUe0CqbY2PF9sxV1WRuqo
+      UThmTO82R/mJ0OpSC9DWdIoVG/fxyEPzefUPf6ZnXk+aDzWj6zq6rhOm4YU5pWitOELz6tUk
+      9son57GlJPTqhQEYwWBkaxFxoUsBWP/RBnKyenOwoopeaTqvvPUFc3/wxKVv/ki2AG1nz9G0
+      ciWGx0Puww+TOHCAzOeLKwrZLJBSCqXUpbOAItUF0ltaaF77Dv4DB8maO4fUUaVodkuM7UUI
+      xO00qNHaimfTZtyffEL6rbeSMXkStpSUsP0+0T3FXQCUrp9fsPb22yQNGkTm3TOx95AFa+La
+      xFUAdKeTxpeXAer8g6y+fUN6fWE9cRWAYH0Dwbo6kocMlh1ZIiTiKgBChJp8jQpLkwAIS5MA
+      CEuTAAhLkwAIS5MACEuTAAhLkwAIS5MACEsLWQBqKivYuGUHeqQ3wQjRBSEKgMHrq9aizu5i
+      w54zobmkEBEQogC0YkvJYsIN36Ly5KnQXFKICAhRAFJJ8J/jhdfWM2Hc0NBcUogICOGWSANd
+      V9jt51eAympQEQ/Cshxa13UMw7i0PziWXfznx8MGeqVUXNQJ8VNrWHaPR+NUiGv1t5v5Y1k8
+      tarxUmvYNsSEnuJipTH/zaIUivipE2K/1r/ephqhLDVuzg9prD7ES8vXkVUwiMceui/a5Zgz
+      2lj72os0ZY7mwdnfjnY1Hao+spt3P/4Cm6OAR5fMIZYjUPbOCvYdqWTirIcZNyR0hxrHfrt/
+      we4d27lr8VI0ZxW+aBfTES2BO6dMxusPRLuSK+pTUsq0b5cSCMT+qXnXDxtOc4uXjLTQvsMh
+      bgKQkZZCbW0dfgNi+XhbhYamDFr9PoK6Ee1yOnRi1ybeKz/L9xfNinYpHTOCZPQcyH1Tx7L7
+      0ImQXjpuAjBm0l24j+/g5il3x3S/zQgG+KT8ADkJTdQ0uqNdToe0pAwKHAaf7dhDbA8EFV9+
+      sZkDZ3XumDA8pFf+f3CePldJJuelAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Revenue by Country' width='192'>
+      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
+      Df4H37/u8Crg79gAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Revenue by Device' width='192'>
+      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
+      K/g/DZFHdIg6srMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Revenue by Genre' width='192'>
+      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
+      6aXwv1BFiUnqRqTHAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Streaming Platform Ads Performance Dashboard' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAgAElEQVR4nO2dZ3gV1daA31PTew9JCBBC6D30YkHsKNgQxd699quf13KxgQ3Fa0UpSlcE
+      UemIdAglhJ6EFNJ7O8np58zs70cgEumQA8TM+zyQZGbP3mv2zJrd1l5LJYQQKCi0UNSXWgAF
+      hUuJ9lILoKBwsTm+06O0AAotEtP3s8DhQKWMARRaGkIIStp0IGD6N0oLoNAyUak0WH5apCiA
+      QstE5e+N48AhRQEUWihC4Hb1FYoCKLRMVF6eeN55uzIIVmh5CCFQqVSAMg2q0AI59vKDogAt
+      HiEETd0JkGUZWZbPRQokpwOb3cHF7o4oCnAZ4LTW8v4bL3HVlVcy7v5H2ZWWBwhSkjZhsru2
+      7IIDG7j3X6+d17WSxcDTj9zLXXfdxaNPPM3SddsRQjBryutMnLrklNdlpe6hsLK24e+DW1fS
+      r19/nvq/iZyL2pydjOXcefMNTPxyzkmVS1GAy4AfprxNrhzJz4t/4cXH7sZUV4ssybz/ylPk
+      G5xIkoQQouGn0ykBIDkdFOTnYz/6txD1X1KTydSQRggZSZJw2K0Yao0IIbCY6jCarQggosMA
+      Pnvnlfr8JAlZljHV1WK2/qV5sixhMZuRpMZfduG0sX7Tbp54/t/ce8dNvPXM/SRnlTe6N1mW
+      sVjMWG12hBDIssxP0z7kz5RsnE4nsizz++J5PPzaZ3zz0euoAclho7CwsPF9SRJCyDglCSHL
+      SJKMzWqm1mhGCIGpzoDFdmILkrJhJd5tOrNo7vc4pL/OypITs8Wi2AJdDtjtdoy1BtQ6d3r2
+      H4ZKpWL2l5PYuD+HR++6ka59r+T9x69g5FNfc1NHweL9Tv6c/Ta333UfMe0TOJSWy0+//oqu
+      Yi93PPYagX7eZBwpZuHSlbiXbuWKu/9Dl/gY0g7sp9fAYZiqy9h/KJvlm7bjV72bhyYuZeX8
+      T3jpoVtJrdSgcZpJzSrhz61bCRTl3HnbXdjc/HFTOel33T1MeO7+Btk1One69+qNv04wom88
+      h7ILjrszJy89PJbMKieledmMfe5dBoZa+H7xetw35bKkfQJP3jGCGT//gdu6TLZvuIZJL9zO
+      nXc9SEhUDLn55cz++Rd8DQd5+K3Z9A01sabQg08fHcr9r3xB+9ahHNh/gEHDh1NZWsShzFK2
+      Je8kwlffIMFvS37l5vGTUOU8zI6MMgYnhJGftpPbxj1MYFgUCIVLjrWuQrz05P0iJjpGjHv4
+      WVFSbRJCyOKuYd3E4cr6NIbs7cIvMFxMnr5YSLIQ0ya+ID7+fpmQJEn8MPn/xAczfheS0yns
+      NqsoLioSE18cLz6dv0Yc2fmbuOruZ4UQQsz7/A3x2uR5Qggh/jXuBrF022GRv2eNGD76aSGE
+      EE+NvU78vjVdCCHEo7eNEKt2HRHfvPUv8ebnC4QQQiyd/qF4cdLUBrkdtaWiY/t48eOvS8Wc
+      GV+Jzp27i4wSg5g5+VXxzleLhBCycDgcorKiTOzdvFQMvfEeIYQQ7790t5jz576GfN57/i4x
+      Y9kOIYQQk56/R3y9aIMQQojV8z4Tj7z6qSjYt16EhUSKL+f8LiRZFtuWzhDj/jVJCCHE5Nce
+      E5/PWyuEEOLuq3qIXTm1DfnKjjoxoM9AYbA5xS/fvidefH+6EEKI5+6+RsxZtVsIIYTSBboM
+      cPMO4qMvZ5J5+CA9gm289M5nJ00X2+MqXnjwVtQqKCoq4Y8lc3nuuefYtL8QLy2kbl/F9TeN
+      4dtp00k+lI3zaHdFpVIf/alCpf7r95Oh1dZ3CjQaDSAoLiqmc6eEU8ouOSwk79xBUbWDxctW
+      Ehfm23DOYa7hvttv5t0Pp7Dwt1UN8pyOwvxCEuLbA9C2XXuK83IA6DhgJE+MuxH1selLteqv
+      e1L99fvxHN7xJ2m5Odwx6kamzPyFFUt/R5IFOTml9OnVuf5+zyiRgsv5Y8WvRCX0pl1UKFGR
+      oezLrX9JtXot+QWFxPqEAaBRaxqu6datM0c8tHw88QUkq5HiKjPLpr7FbY+9zIM39uXt5/Y2
+      iWz9Bg1g0icfEigeZMWfm3DvcmOj8+7eIbz65lv46068tjLvEOVE88PEt9m38VfWHVgEgE7n
+      RnF+AQ5HAlpt4wt79OnJ8uUrGZxwL2tWr6Rbn34AqNVqTq6yp2bpb0t485Pp3HtdX0Aw9rrh
+      pJUaiYuLZPUfm2g7ZrAyCL4ccFc7ePmJ+xkydDjL9lXz4evPACqeeun/mPDkHTz16kdoPXzp
+      37tzwzU3jn+GaPkIN95wI+MeeJz8CiM33jWeHz97nXseeAJNYCyx4UF4+IbQu2s8AOHR7YiL
+      CQegQ5ceBPt54u4TSJ/u9V/4hK69CPb1AKBjt14E+Xpw7d3/4tk7h7Nt+y5at2nX0JoAqLR6
+      Bgzoj/Zvb2Zk6zjaRocS0qY7CX5V3HzLGH7fkkq/Xl0BuGP8k6yd9QG33P0QJge06dCVyGA/
+      AO59+jVsh1dz1VVXsaVAx8uP3Y6bdwB9enRqyN8vOJIuHWIBaN2uI9HhgQB06dUfH/djHwlB
+      hUnDbTddQVBQEEFBwTz88H0cTsvgxQkfsPK7t7jp1rHKSrDC6UlL3sL+/GpCfN35/IMJ3P7v
+      /3HX1b0utVhNhqIACqelqjiXHxcuoqzGSI9+V3DTNUNQn2tf5DJGUQCFFo0yBlBo0SgKoNCi
+      uXQKcHRZ/GyRZRmls3Z+1Nfd2VWeEGef9p+AZsKECRPO58KULWtZuGQpW7duY9eunXgGRxEW
+      6Nsojam6jMJKEwG+XidmINuZ9PH/GDJ4YMMhyWbkw/cmIHm3IjYyuFHyr6dMIr7nENy1YDNV
+      8d3UqWzbvoNDmXnEx8ej12r+XsI/gsr8DKbPmse2bVvZsWMXFWaZ+DbRjdLIsoNDqZmEhgSf
+      NI8F0/+HV3RXAryOmggIwcIfvmJbagm9unZolHb973MokQKIDq2flly7fAleoa3xdj/JRL8L
+      SN2xlj/3FdKlfeuLUt55twCdeg9g3Nhb2H8wg/HjxxMfE4bNXMvWzZs4fKQAWZbYtGoRM+cu
+      Yl9qBkKWyEw7wLakHdSabYCgvLyyUZ55qTvR+LdizerV9UZNQlBZWsD2HckUFhVzzJbJaa3l
+      cEEt9947jiBRxoxFq0EICo4cZvOWJExWB5WlhVTUmAAozM3GaHVQXV7Epk2bKK8xAjJZGVkU
+      5WezfdceHJKgsqSASoMJZAeZWTkA1JQXsWnjJsqqjedbVReEf0Rrxo+/l7KMZK66dTzD+/dE
+      yBJ7k7ezM+UAsizIObyPKVO+IHn3bix2mbKiPLZt3UpBSX39GqqrsDv/am0d1hpSsio5krIJ
+      k7O+Um3mOnZu3052Ti5mm6Mh7Y4tG6g22akqK6KwqJikbVupMtRxYE8yGTmFCATZGZnkZKWz
+      e18qshAYKkopq6rlSFYGNodEUW4WmzZvpc5iByEozstmW9IOKg0mhJDJSj/Ijp27MVntRMd3
+      Y1DPTkfTZbFp0xZqjFYAsjMzKM4/QtLOFBySjOy0szd5J3sOpOGUz6/VOm8FcHP3xM/XF61W
+      i5+fH3q1YNKENygzmJj7zWS2H8yhqLiEyvISjuQWYK0uYnPyIaqKs3nr/ZMv9W/anMQ1N41B
+      Zcij1ipRWZDG629/THFRPqUVhkZptVodvr5+hIeG4HA4KcrczVezluA0l/PBp1OpLkxn1qJV
+      COHk6y+/xlxXzqQPP0etErw/8X0sDgdT3vsvK9cn8cfi71mzI51tqxeTdDAfnEa+/HY2troy
+      3vvwf6g18P7ESVicTW2se2Y0Wn19/eq0+Pj64eXhxi/f/4/1KVmkJq3k6/nLKS0uxFhXy+GM
+      TGwOBxs3bsBoquO9/75GleVEmbP3JhHbbSDd24eRkpqP7LAw4T+vcDi3gNy8wpPKsXPd73z2
+      3WwyDiXz3Auvcigzmw/eeQ+LJPHlh++xOXk/qxfN5Oc1Ozi4bQ2ffPop0xf8RmHWfv437UeE
+      vYb3P/qC6pIMJk2Zhrmump3Jezm8cw0zFq6muqKQfalZ5KfuYMWm3ZRk7+WDz2dirqvkjTff
+      xuqQ+ez9N1m+bivrf5vNii0H+Xn6FLanF5CTupv8CtN51W+TjQFsdUWY3WO55YZrefTeW9mc
+      lMLQQQPp0msgo669ApXeE2GppqismorK8hOul50WduzNpCw3HT12dh7IZs/2LVx750Pccsst
+      xEYGNUqfl57Cs088zJx1h3ng9mvZszMJoYLs/DIKM/cT2qEvJYd3U1WUhT6sPbW5B6m2SaQf
+      zsRcUURBtQmvgFbcc+/dXDGoN2aj+QSZCjL2U2OVSU/PwFqZT16lpamq6/wRgi378nnyobu5
+      55GnyErZRN9Bw4iObsvYO+/Az0ODl5uWrOxcnLY6DGbH3zNg/YbNaCUzQq1n/cbNGEuz0ET2
+      ZNwdY0g8bsX171xx7ShG3Xwtbdp25o7bbicqyA2nDO7ewYy54zYefWQ8B5JTAAiI7sQ7/3mR
+      nIPJSCoVmTklFOcewq7xxV02si/tCG3j2uIXHEFdWS45RdW0aR3VUFbK9q2MvG08I6+/ma5h
+      arLLjXj6h3PPuHFcOaQvZrOZqNg2pO3ZhVntQ0SAx3lVZ5MpgMbNB3tdOQ5JJj+/kOCQEFRq
+      FVabFVmW2bLqF4LiB3DfPXfi7XZif73syAE8wtvjrlXTp19ftmzcjIeHB2XlZUiSE4fT2Sh9
+      TEIv3n1nAipjOdW1Jvz9/ImO68Lo0WN479238PL0oX2YOz8tXkb/ocPx8vUjJCyaW28dzVsT
+      JxId4HniTahUOJ0OrBYzTlng7eNHUFgUt946mgnvfUBMoHtTVdcFoMLfXVBaY8ZYVYzWMwBQ
+      4XDYkGSZuqJUtmQYefSRh2gXHXLC1ZLDTGphHe1bBRAR14Wi1N1IOnfqqitwShJ2+7nvwBFC
+      IEsyeVmZBIbXm1q0bdcOlQr8/P1o1SaB0aNHM/G9d/Hx8mHCB5O588ZBfPnFt/iExDJ58kcM
+      6BjKtFk/N+QZEBBAcVERsuykpMpMgLf+hHK79L+GD955A21VGis2HzhnueECBsEAQjjJzSum
+      X78+aHTueIkavv1+HvkGmQfGjSEwKJC1vy9kX04FVwzsxeKFP5F5pACfoFAG9ulOXn4RvXv1
+      ACBtfwod+13FwD7daBfXnrT9+7ju5ptZu2QeSckH0Lh70X/AYNy0IDttFJfXMnDQIHp3acPC
+      X1dxw6hb2bN+GVt2JJNXbKBnry6E+OhYuTWVe+4YRVBIBFXZe1i5bjMHD+fQs1dPyoqK6dG7
+      J+aaSjQ+ocTHhPDTgnkcPlJAYGgrrh4xguoje1ixbjMH047QM7E3bppLM3FWkJtNhx4D8dKr
+      iIuN4Jsvv2LT9v3c98ijhAYGUHZkD7+u3kj3/ldycOtKdu09iErnTu/EgZiriolq3wU/Dx11
+      ZbnUaUK46doraR0bi60qn9AO/RFlB1m07E9MNiddeiYSHugDQFFBHu069UBYqvEMiibM342y
+      SgvdusRTkJ9H5x49Wb1oLvvTM0jNrebhB8YhmWvQ+oQSEx5IWFRr9m1eyaakXRwpqKBDmxC+
+      +WoqKfsO0XfIVfiKGr6dOYfUzHyuvu4Ggrw02NVeDB48kK0rFrJ0xWoSBlxL/67tKcjPo3uv
+      3lhrK8EjhNL0bfy0ZAWldU5uuvE6fD1PVJIzoawEK1wgTl57/lVe//Qjzq8TcmlRFEDhAhHk
+      5+bTqnVMs1xVVRRAoUXTHJVWQaHJUBRAoUWjKIBCi+acFUAIQX5+fosymFL453JeLcCnn356
+      SktOcdTK0+l0NrmSCCFwOBxIknTKNOdbtqtkvtw4VocOh+OU9yqEaHBadbERQmC32y/aszjr
+      WSAhBLt372b16tWsX7+eYcOG0adPH4YPH45er0eWZf7880/WrFlDdnY2drud4OBgrrvuOm65
+      5ZYGdxunwuFwsGrVKn777TfeeecdwsLCGp0vLS1lypQp7N69G19fX8aOHcstt9yC+qibj127
+      drF06VLS09MxmUz4+fkxZMgQ7rnnHjw9T7Lqe/Se8vLyWLBgASkpKVgsFsLDwxk3bhxDhgxp
+      5GZDkiS2bdvG3Llzeeqpp+jSpcvZVNtFxel0snbtWhYtWsQbb7xBdHRjq9HKykqmTJnCzp07
+      0Wg0DBs2jKeeegovr3pr3cLCQhYvXkxycjLV1dXo9Xq6dOnCAw88QExMzFmV/+6775KXl0dC
+      QgIvv/wyAEuWLGHdunUnvSYhIYEnnngCgPT0dL7++mtSU1PR6XQMHz6cJ554okE+V3BWblGE
+      ECxcuJBPPvmE7t27o9FoyM3N5ffff+ejjz5i8ODBOBwOPvzwQ+Li4rjmmmtwc3MjJSWFDz74
+      gIqKCh5//PGT5i3LMuvWrePbb78lKysLrVaLw9HYfsVisfDCCy9QUVHBnXfeSWZmJu+//z4a
+      jYZRo0YB8MUXXyCEYPDgwfj6+pKZmcmMGTMa0h5TlOPJzc3l3nvvJSAggCuvvBI/Pz82btzI
+      yy+/zOeff07fvn0RQpCcnMw333zDnj17ADCZzs/wylUIIdi0aRNTp04lPT0dtVqNzWZrlMZu
+      t/PSSy+Rn5/PXXfdhdVqZcGCBVRWVjJp0iTUajXLly9n9erVDBo0iMjISGpqali6dCnbt29n
+      zpw5BAYGnlaO1atXs3HjRtzc3NDp/jKfPt53zzGsVivJycn4+/sDkJeXx5NPPkl0dDT33Xcf
+      5eXlLFy4kLKyMiZNmnTUT5ELOJPXMiGEsNvtYuTIkeKzzz4TsiyL559/XjidTlFQUCAKCwuF
+      EEJIkiSKiooaXSdJknj22WfFbbfddsq8y8rKxMCBA8XLL78svvrqK9GvXz+Rn5/fKM3SpUtF
+      3759xfbt24UQQjidTvHMM8+IUaNGCavVKoQQorCwUMiy3HCNLMvis88+E0OHDhUGg+GkZaen
+      p4upU6cKi8XScMxkMomRI0eKSZMmNdz7NddcIx577DExb9480adPH5GUlHQ21XbRqKurEwMH
+      DhTPP/+8mDZtmujbt6/IyMholGbt2rWiT58+YsOGeq9rsiyLBQsWiMTERHHw4EEhhBClpaXC
+      brc3ui45OVn07t274bpTUVNTI2688UYxe/Zs8eijj4pHH330tOl/+uknkZiYKA4cOCCEEOLj
+      jz8W1113XaNntXjxYtG3b1+xd+/es6uI8+CsxgCSJGEymU5oilq1akVkZCRQ77goIiKi0XlZ
+      ljGbzYSEnGiUdQxvb29mzpzJ+++/T7t27U6aZsuWLURFRdGrV707Do1Gww033EBhYSE5OTkA
+      REZGnvCVOdYVcnNzO2m+7du355FHHsHd/S8jN3F0DHPsC6bRaPj444/5+uuv6dmz5ynv41Ki
+      1+v57rvvmDx5Mh06dDhpmq1btxISEsKAAQOA+q/yiBEj0Ol0JCUlARAaGtroyy2EwGg0otFo
+      Tvv1F0Lwww8/4OXlxW233XZGea1WK/Pnz2fgwIF07NgRgKysLOLi4vD1/WtT1YgRI/D29mbz
+      5s1nroTz5Ky6QG5ubgwbNoyZM2dSVVVFTU0NJpMJb2/vRl2LYxVmNBpJT0/nl19+obS0lI8/
+      /viUeXt4eBAfH3/K8+LorFNMTEyjcUSbNm0AKCgoaHjoZrMZk8lEdnY2y5cvJykpiddff/2U
+      CnC8wgghqK6uZuLEiVitVm644QagXrG7du16FrV06dDr9XTqdGozZnF0rBMdHd3oBff19SU4
+      OJi8vLyGYw6Hg7q6OoqLi9m2bRs///wz48aNO23+mZmZLF68mIkTJzb6mJyKNWvWUFhYyOuv
+      v97w/vj5+ZGRkYHZbG4Ys3l5eREREdFIvqbmrBRApVLx9ttvs3btWmbPns2hQ4e48sorSUxM
+      5M033yT8qAkswH/+8x/27t2LzWYjKiqKZ599lrZt2563gPXutS14e3s3Ou7p6YlKpWrUH//m
+      m29YsmQJDocDHx8fHn30URITE89YhsPhYNasWcyYMYN27doxd+7cEwaQzRkhBBaL5YSWWK1W
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Ad Impressions' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAGNElEQVR4nO3ZMWhTaxyG8TexUZOaGidrSuvQQqk66FAIgoODDlIUN6FY0UEQnZzUXXCV
+      YItDwamCtprFoWprxRJBBxFUtEihhKpVUDE2NbHJdwdpwGsvd7u95X1+45f/OZwMT875TiIh
+      hCDAVHSlLwBYSQQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAaw0rfQHAkhCCXr58qTt37ujo0aNKp9N/zFQqFeVyOU1MTKhUKmnbtm3q7e1V
+      Op1WJBKRJNVqNb1+/VoPHz7UzMyMSqWSUqmUuru7tW/fPq1fv75+vkgIIfxn3xBYRghBb968
+      0eDgoCYmJiRJ165d0/bt23+bq1arunDhgsbGxtTc3KzGxkbNzMyoqalJAwMDam9vlyTdu3dP
+      58+fVywW0+bNmxWLxfTlyxd9/fpVO3bsUDabVTKZlMQjEP4HBgcHdeLECeXzebW2tv7j3Pj4
+      uMbGxrR//37dvHlT169f18WLF/Xt2zddvnxZS7/lyWRSp0+f1sjIiIaHh3Xjxg2NjIzo4MGD
+      evHihUZHR+vnJACsuPfv3+vQoUO6deuWDhw4sOxMrVZTLpdTIpHQmTNnFI/HFY1GtXfvXu3Z
+      s0dPnz5VoVCQJGUyGR0/flzpdFoNDQ2KRCLauHGjjhw5okgkorm5ufp52QNgxZ09e1aJRKL+
+      DL+cUqmkt2/fqr29Xc3NzfX1aDSq3bt368GDB3r16pXa2tqWPT6EoPv37yuEoF27dtXXCQAr
+      rrGx8V9nisWiisWi0um0otHfH1yWNsvv3r2rr4UQVCgUND8/r6mpKd29e1fT09M6deqUMplM
+      fY4AsCqUy2VVq9VlY1m6eywsLNTXfv78qb6+Pn3//l3Sr8h6e3t1+PDh3wIiAKwKa9eu1Zo1
+      a1Qqlf74bGFhQSEExePx+losFtPo6Kiq1apmZmb05MkTDQ0N6fbt28pms+ro6JDEJhirRFNT
+      kzZs2KDZ2Vn9/c397OysJGnLli31tUgkonXr1imRSKirq0vHjh1TNptVsVjU1atX63MEgFUh
+      kUiovb1d09PT+vDhQ329Vqvp8ePHisVi6urqUgjhj0CWtLa2KpVK1YORCACrRDQaVU9Pj+bn
+      59Xf369KpaIQgiYnJ/Xo0SPt3LlTbW1tCiHoypUryufzqlQq9eMXFxeVy+X08eNHdXZ21tf5
+      Jxgram5uTn19fVpcXJQk/fjxQ+VyWY2NjWpo+LVFvXTpkrq7u7W4uKhz585pYmJC6XRaqVRK
+      U1NTSiaTGhgYUEdHh2q1mk6ePKnnz5+rqalJLS0tisfjKhQK+vTpk1paWtTf3690Oq0QAgFg
+      ZRWLRQ0NDalarf7jTE9PT/39frlc1vDwsMbHx1Uul9XZ2am+vj5t3bq1Pv/582eNj4/r2bNn
+      KhQKqlar2rRpkzKZjHp6epRKpST92jwTAGxNTk6yB4CvfD7PHQC+yuUyAcAbj0CwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw9hfy0Kc6nUahCQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Total Ad Revenue' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
