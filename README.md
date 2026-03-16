@@ -12,8 +12,7 @@ The goal was not simply to build visualizations, but to replicate a realistic an
 <img width="959" height="539" alt="NETPIX Dash Screenshot" src="https://github.com/user-attachments/assets/d159fb47-aa14-413c-86ee-40778e8d45a9" />
 
 ## Executive Summary Presentation
-
-(https://github.com/user-attachments/files/26034068/Netflix.Streaming.Ad.Platform.Performance.Analysis.pdf)
+[NetPix Streaming Ad Platform Performance Analysis.pdf](https://github.com/user-attachments/files/26037207/NetPix.Streaming.Ad.Platform.Performance.Analysis.pdf)
 
 ## Project Overview
 
@@ -98,7 +97,7 @@ tableau/
     Streaming Ads Platform Performance.twb
 
 presentation/
-    Netflix Streaming Ad Platform Performance Analysis.pdf
+    NetPix Streaming Ad Platform Performance Analysis.pdf
 ```
 
 ## Project Workflow
