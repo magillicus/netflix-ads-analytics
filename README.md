@@ -79,19 +79,19 @@ data/
     netflix_ad_performance_dataset.csv
 
 sql/
-    01_data_exploration.sql
-    02_core_metrics.sql
-    03_ad_performance_analysis.sql
-    04_deep_dive_analysis.sql
+    01_data_exploration.sql.md
+    02_core_metrics.sql.md
+    03_ad_performance_analysis.sql.md
+    04_deep_dive_analysis.sql.md
 
 excel/
-    supporting_analysis.xlsx
+    Netflix Ad Performance Metrics.xlsx
 
 tableau/
-    ads_platform_dashboard.twbx
+    Streaming Ads Platform Performance.twb
 
 presentation/
-    ads_platform_insights.pptx
+    Netflix Streaming Ad Platform Performance Analysis.pdf
 ```
 
 ## Project Workflow
