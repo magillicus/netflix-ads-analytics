@@ -82,7 +82,7 @@ Synthetic data was used to simulate realistic advertising platform behavior whil
 
 ```
 data/
-    netflix_ad_performance_dataset.csv
+    netpix_ad_performance_dataset.csv
 
 sql/
     01_data_exploration.sql.md
@@ -91,7 +91,7 @@ sql/
     04_deep_dive_analysis.sql.md
 
 excel/
-    Netflix Ad Performance Metrics.xlsx
+    NetPix Ad Performance Metrics.xlsx
 
 tableau/
     Streaming Ads Platform Performance.twb
