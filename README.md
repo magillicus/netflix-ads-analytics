@@ -5,6 +5,9 @@ This project explores analytics frameworks that could support performance monito
 ## Dashboard Preview
 <img width="959" height="539" alt="Tableau Dashboard Screenshot" src="https://github.com/user-attachments/assets/d96214b8-f9f1-4466-9d9a-42a5898c15f1" />
 
+## Executive Summary Presentation
+[Netflix Streaming Ad Platform Performance Analysis.pdf](https://github.com/user-attachments/files/26034068/Netflix.Streaming.Ad.Platform.Performance.Analysis.pdf)
+
 ## Project Overview
 
 This project explores advertising performance within a simulated ad-supported streaming platform. The analysis evaluates how advertising revenue, viewer engagement, and content consumption interact across different devices, content genres, and geographic markets.
