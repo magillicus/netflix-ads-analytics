@@ -9,10 +9,11 @@ This project simulates how an analytics engineer might evaluate the health of an
 The goal was not simply to build visualizations, but to replicate a realistic analytics workflow — from raw data exploration and SQL metric development to stakeholder-ready insights and recommendations.
 
 ## Dashboard Preview
-<img width="959" height="539" alt="Tableau Dashboard Screenshot" src="https://github.com/user-attachments/assets/d96214b8-f9f1-4466-9d9a-42a5898c15f1" />
+<img width="959" height="539" alt="NETPIX Dash Screenshot" src="https://github.com/user-attachments/assets/d159fb47-aa14-413c-86ee-40778e8d45a9" />
 
 ## Executive Summary Presentation
-[Netflix Streaming Ad Platform Performance Analysis.pdf](https://github.com/user-attachments/files/26034068/Netflix.Streaming.Ad.Platform.Performance.Analysis.pdf)
+
+(https://github.com/user-attachments/files/26034068/Netflix.Streaming.Ad.Platform.Performance.Analysis.pdf)
 
 ## Project Overview
 
