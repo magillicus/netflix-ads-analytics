@@ -117,7 +117,6 @@ presentation/
 5. **Executive Communication (PowerPoint)**
    Key findings were summarized into an executive-style presentation highlighting insights and strategic opportunities.
 
-
 ## Tools Used
 
 * SQL
@@ -125,3 +124,4 @@ presentation/
 * Tableau
 * GitHub
 
+This targeted portfolio project was created to demonstrate role-aligned analytical thinking for the Analytics Engineer 4 - Ads role.
